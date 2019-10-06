@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TableRow
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/txtTitle"
+            android:text="Huvudstäder"
+            android:id="@+id/txtSubTitle"
+            android:layout_column="0">
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/txtWordGuessed"
+            android:text="Mitt ord"
+            android:id="@+id/txtWordGuessed"
+            android:layout_column="0">
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:gravity="center"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/editInput"
+            android:id="@+id/editInput"
+            android:maxLength="1"
+            android:hint="Skriv in en bokstav"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_column="0">
+        </EditText>
+</TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/txtLettersTried"
+        android:text="Bokstäver"
+        android:id="@+id/txtTried"
+        android:layout_column="0">
+    </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/trTiesLeft"
+        >
+
+        <TextView
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/txtTriesLeft"
+            android:text=" I I I I I"
+            android:id="@+id/txtTriesLeft">
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:background="@color/colorWhite"
+            android:onClick="resetGame"
+            android:text="Spela igen"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/btnReset"
+            android:textStyle="bold|italic">
+
+        </Button>
+
+
+    </TableRow>
+
+
+
+
+</TableLayout>
