@@ -1,2 +1,2 @@
-# 2019-isgc12-Bjorling
+#Bjorling
 Plugg
